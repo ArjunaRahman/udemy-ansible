@@ -1,0 +1,5 @@
+---
+db_name: akrapp
+db_user_name: dbuser 
+db_user_pass: dbpass 
+db_user_host: localhost
