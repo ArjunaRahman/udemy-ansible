@@ -1,5 +1,5 @@
 [control]
-akr-9ndxqf2 ansible_connection=local
+devops-ci-dev-srvr1.dsccorp.net ansible_connection=local
 
 [loadbalancer]
 lb01.dsccorp.net ansible_host=10.10.248.70 ansible_user=ubuntu
