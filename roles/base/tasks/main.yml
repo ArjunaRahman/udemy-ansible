@@ -1,0 +1,33 @@
+---
+# tasks file for base
+- name: fixing issue for local lang environment
+  shell: |
+    sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' > /etc/environment"
+    sh -c "echo 'LC_ALL=en_US.UTF-8\nLANG=en_US.UTF-8' > /etc/default/locale"
+
+- name: update apt cache
+  apt: update_cache=yes
+
+- name: upgrade all packages
+  apt: upgrade=dist
+
+- name: install base software
+  apt: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - sudo
+    - acl
+    - build-essential
+    - iputils-ping 
+    - net-tools 
+    - wget
+    - curl
+    - unzip
+    - git
+    - less 
+    - vim
+    - apt-transport-https
+    - maven
+    - expect
+    - expect-lite
+    - xvfb
+    - jq
