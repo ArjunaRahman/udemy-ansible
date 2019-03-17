@@ -1,0 +1,11 @@
+---
+# tasks file for packer
+
+- name: Add Packer repository
+  apt_repository: repo='ppa:ansible/ansible' state=present update_cache='yes'
+
+- name: Install Packer
+  action: apt pkg={{ item }} update_cache=yes force=yes state=latest allow_unauthenticated=yes
+  with_items: 
+  - software-properties-common
+  - packer
