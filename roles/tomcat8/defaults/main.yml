@@ -1,0 +1,4 @@
+---
+# defaults file for tomcat8
+tomcat_admin_username: console
+tomcat_admin_password: SecOfr1

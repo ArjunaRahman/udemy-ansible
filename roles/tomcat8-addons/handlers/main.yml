@@ -1,0 +1,6 @@
+---
+# handlers file for tomcat8-addons
+- name: restart tomcat8
+  service:
+    name: "{{ tomcat_service }}"
+    state: restarted

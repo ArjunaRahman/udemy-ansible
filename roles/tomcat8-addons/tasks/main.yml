@@ -1,0 +1,6 @@
+---
+# tasks file for tomcat8-addons
+- name: Add postgres driver for tomcat8
+  copy: src={{ postgres_driver }} dest=/var/lib/tomcat8/lib/{{ postgres_driver }} owner=tomcat8 group=tomcat8 mode=0644 
+#  notify: restart tomcat8
+
