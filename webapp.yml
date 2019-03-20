@@ -4,4 +4,5 @@
   roles:
     - base
     - java8
+    - sublime-text
     - tomcat8
