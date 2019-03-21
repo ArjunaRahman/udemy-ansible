@@ -14,3 +14,4 @@ db01.dsccorp.net ansible_host=10.10.248.73 ansible_user=ubuntu
 
 [webapp]
 192.168.1.9 ansible_user=ubuntu
+192.168.1.10 ansible_user=ubuntu
