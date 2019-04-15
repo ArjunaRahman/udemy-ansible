@@ -21,3 +21,8 @@ wso2eitrainpg1.dsccorp.net ansible_host=10.10.248.42 ansible_user=ubuntu
 wso2eilab.dsccorp.net ansible_host=10.10.248.26 ansible_user=ubuntu
 wso2eilabn2.dsccorp.net ansible_host=10.10.248.27 ansible_user=ubuntu
 wso2eilabpg1.dsccorp.net ansible_host=10.10.248.28 ansible_user=ubuntu
+
+[dock-lab]
+target1 ansible_host=172.17.0.2 ansible_user=ubuntu
+target2 ansible_host=172.17.0.3 ansible_user=ubuntu
+target3 ansible_host=172.17.0.4 ansible_user=ubuntu
